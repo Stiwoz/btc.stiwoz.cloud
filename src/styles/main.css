@@ -1,0 +1,67 @@
+body {
+  height: 100vh;
+  display: grid;
+  place-content: start;
+  background: linear-gradient(125deg, #000 20%, #003, #222);
+  overflow: hidden;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin: 0 auto;
+  background-color: #101010;
+  color: #aaa;
+}
+
+body::before {
+  content: '';
+  display: block;
+  width: 100vw;
+  height: 100vh;
+  position: fixed;
+  background: url(https://images.unsplash.com/photo-1467685790346-20bfe73a81f0?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mjd8fHNwYWNlfGVufDB8fDB8&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60);
+  background-size: cover;
+  background-position: bottom right;
+  filter: brightness(2) contrast(3) blur(2px) brightness(0.5);
+}
+
+svg {
+  width: 100vmin;
+  height: 100vmin;
+  background: linear-gradient(to top left, #000 30%, #0ff, #f0f 80%);
+  filter: contrast(10);
+  mix-blend-mode: difference;
+}
+
+h1 {
+  font-size: 30px;
+  margin: 0 0 20px 0;
+  text-align: center;
+}
+
+h2 {
+  text-shadow: 2px 2px blue;
+  text-align: center;
+  color: #cc00ff;
+  z-index: 1;
+  top: 30%;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 42px;
+  filter: opacity(0.8);
+}
+
+.column {
+  width: 300px;
+  display: inline-block;
+  padding: 30px;
+}
+
+.column.buy {
+  background-color: #030;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.column.sell {
+  background-color: #300;
+  font-family: 'Roboto Mono', monospace;
+}
