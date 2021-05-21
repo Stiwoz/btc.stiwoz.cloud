@@ -1,0 +1,29 @@
+# This is a basic workflow to help you get started with Actions
+
+name: 🚀 Deploy on push
+
+# Controls when the action will run.
+on:
+  # Triggers the workflow on push or pull request events but only for the main branch
+  push:
+    branches: [main]
+
+jobs:
+  SFTP-Deploy:
+    name: 🎉 Deploy
+    runs-on: ubuntu-latest
+    steps:
+      - name: 🚚 Get latest code
+        uses: actions/checkout@v2
+        with:
+          fetch-depth: 10
+
+      - name: 📂 Sync files
+        uses: Stiwoz/git-sftp-action@master
+        with:
+          username: ${{ secrets.USERNAME }}
+          server: ${{ secrets.HOST }}
+          ssh_private_key: ${{ secrets.SSH_KEY }}
+          local_path: './*'
+          remote_path: ${{ secrets.PATH }}
+          args: '-o ConnectTimeout=30'

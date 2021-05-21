@@ -1,0 +1,13 @@
+.git*
+.git*/**
+**/.git*/**
+node_modules/**
+node_modules/**/*
+.env.example
+uploads/**
+uploads/**/*
+.gitignore
+*/.gitignore
+.git-ftp-ignore
+.git-ftp-include
+.gitlab-ci.yml
