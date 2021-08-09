@@ -37,8 +37,9 @@ const serializeData = (data) => {
     asks += parseFloat(value[0]);
     // asksPlaceholder.innerHTML += `${value[1]} BTC @ ${value[0]} € <br/>`;
   });
-  const med = (asks + bids) / (data.asks.length + data.bids.length);
-  price.innerHTML = `${med.toFixed(2)} €/BTC`;
+  const med = ( asks + bids ) / ( data.asks.length + data.bids.length );
+  requestAnimationFrame( () => price.innerHTML = `${ med.toFixed( 2 ) } €/BTC` );
+  
 };
 
 /**
