@@ -23,7 +23,7 @@ body::before {
   filter: brightness(2) contrast(3) blur(2px) brightness(0.5);
 }
 
-svg {
+svg#astronaut {
   width: 100vmin;
   height: 100vmin;
   background: linear-gradient(to top left, #000 30%, #0ff, #f0f 80%);
@@ -31,23 +31,23 @@ svg {
   mix-blend-mode: difference;
 }
 
+svg#text {
+  width: 100%;
+  display: block;
+  text-align: center;
+  position: absolute;
+  overflow: hidden;
+  left: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  background: black;
+  pointer-events: none;
+}
+
 h1 {
   font-size: 30px;
   margin: 0 0 20px 0;
   text-align: center;
-}
-
-h2 {
-  text-shadow: 2px 2px blue;
-  text-align: center;
-  color: #cc00ff;
-  z-index: 1;
-  top: 30%;
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 42px;
-  filter: opacity(0.8);
 }
 
 .column {
