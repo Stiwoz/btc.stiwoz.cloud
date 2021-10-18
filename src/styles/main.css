@@ -30,12 +30,6 @@ svg {
   filter: contrast(10);
 }
 
-@supports(mix-blend-mode:difference) {
-  svg {
-    mix-blend-mode: difference;
-  }
-}
-
 h1 {
   font-size: 30px;
   margin: 0 0 20px 0;
