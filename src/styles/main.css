@@ -47,7 +47,6 @@ h2 {
   left: 50%;
   transform: translateX(-50%);
   font-size: 42px;
-  filter: opacity(0.8);
 }
 
 .column {
