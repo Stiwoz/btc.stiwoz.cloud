@@ -29,6 +29,7 @@ svg {
   background: linear-gradient(to top left, #000 30%, #0ff, #f0f 80%);
   filter: contrast(10);
   mix-blend-mode: difference;
+  background-blend-mode: difference;
 }
 
 h1 {
