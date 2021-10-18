@@ -28,7 +28,7 @@ svg {
   height: 100vmin;
   background: linear-gradient(to top left, #000 30%, #0ff, #f0f 80%);
   filter: contrast(10);
-  opacity: 0.25;
+  opacity: 0.5;
 }
 
 h1 {
