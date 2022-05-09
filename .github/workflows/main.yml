@@ -25,5 +25,6 @@ jobs:
           server: ${{ secrets.HOST }}
           ssh_private_key: ${{ secrets.SSH_KEY }}
           local_path: './*'
+          port: 22
           remote_path: ${{ secrets.PATH }}
           args: '-o ConnectTimeout=30'
